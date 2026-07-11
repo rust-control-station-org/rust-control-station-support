@@ -1,0 +1,69 @@
+# GitHub Issue Form: プラグイン要望
+name: "🔌 プラグイン要望"
+description: Rust Control Station で利用したいプラグインを提案します。
+title: "🔌 "
+labels:
+  - enhancement
+  - plugin
+
+body:
+  # フォーム冒頭に表示する案内文です。Issue本文には含まれません。
+  - type: markdown
+    attributes:
+      value: |
+        プラグイン要望ありがとうございます。
+        利用目的や想定する連携先が分かるよう、できるだけ具体的にご記入ください。
+
+  - type: input
+    id: plugin-name
+    attributes:
+      label: プラグイン名・連携先
+      description: 希望するプラグイン名、サービス名、製品名などを入力してください。
+      placeholder: "例: Slack 通知プラグイン / Grafana 連携"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 現在困っていること
+      description: プラグインが必要な背景や、現在の運用で困っていることを記入してください。
+      placeholder: どのような作業や運用を改善したいかを記入してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      description: 期待する機能、連携内容、設定項目などを記入してください。
+      placeholder: プラグインで実現したい内容を記入してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 想定する利用シーン
+      description: どのような環境・運用・ユーザーで利用する想定かを記入してください。
+      placeholder: 具体的な利用シーンやワークフローを記入してください。
+    validations:
+      required: false
+
+  - type: textarea
+    id: external-links
+    attributes:
+      label: 関連リンク
+      description: 連携先の公式ドキュメント、API仕様、参考実装などがあれば記入してください。
+      placeholder: 関連するURLがあれば記入してください。
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足情報
+      description: その他、検討に必要な情報があれば記入してください。
+      placeholder: 補足情報があれば記入してください。
+    validations:
+      required: false

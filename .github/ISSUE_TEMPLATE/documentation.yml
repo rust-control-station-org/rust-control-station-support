@@ -1,0 +1,65 @@
+# GitHub Issue Form: ドキュメント改善
+name: "📝 ドキュメント改善"
+description: ドキュメントの誤り・不足・改善案を報告します。
+title: "📝 "
+labels:
+  - documentation
+
+body:
+  # フォーム冒頭に表示する案内文です。Issue本文には含まれません。
+  - type: markdown
+    attributes:
+      value: |
+        ドキュメント改善のご提案ありがとうございます。
+        該当箇所と改善内容が分かるよう、できるだけ具体的にご記入ください。
+
+  - type: input
+    id: document-location
+    attributes:
+      label: 対象ドキュメント
+      description: 改善したいドキュメントのURL、ファイル名、見出しなどを入力してください。
+      placeholder: "例: README.md / docs/setup.md / https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: documentation-type
+    attributes:
+      label: 種別
+      description: 該当する改善種別を選択してください。
+      options:
+        - 誤字・脱字
+        - 内容の誤り
+        - 説明不足
+        - 古い情報
+        - 追加してほしい内容
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-problem
+    attributes:
+      label: 現在の問題
+      description: 現在の記載で分かりにくい点、誤っている点、不足している点を記入してください。
+      placeholder: どの記載にどのような問題があるかを記入してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-change
+    attributes:
+      label: 改善案
+      description: どのように修正・追記するとよいかを記入してください。
+      placeholder: 修正後の文案や追加してほしい内容があれば記入してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足情報
+      description: 関連するリンク、スクリーンショット、参考資料などがあれば記入してください。
+      placeholder: 補足情報があれば記入してください。
+    validations:
+      required: false

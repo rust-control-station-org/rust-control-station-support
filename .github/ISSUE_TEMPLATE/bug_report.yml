@@ -1,0 +1,100 @@
+# GitHub Issue Form: バグ報告
+name: "🐛 バグ報告"
+description: Rust Control Station の不具合を報告します。
+title: "🐛 "
+labels:
+  - bug
+
+body:
+  # フォーム冒頭に表示する案内文です。Issue本文には含まれません。
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます。
+        調査を円滑に行うため、できるだけ詳しくご記入ください。
+
+  - type: input
+    id: version
+    attributes:
+      label: バージョン
+      description: 利用している Rust Control Station のバージョンを入力してください。
+      placeholder: "例: v1.2.3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 利用環境
+      description: 利用している環境を選択してください。
+      options:
+        - Cloud
+        - Self Hosted
+    validations:
+      required: false
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: 利用しているOSを選択してください。
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Other
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: ブラウザ
+      description: 利用しているブラウザを選択してください。
+      options:
+        - Chrome
+        - Edge
+        - Firefox
+        - Safari
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 発生した内容
+      description: どのような不具合が発生したか、具体的に記入してください。
+      placeholder: 発生したエラー、画面の状態、影響範囲などを記入してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順
+      description: 不具合を再現するための手順を順番に記入してください。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作
+      description: 本来どのように動作してほしいかを記入してください。
+      placeholder: 期待していた結果を記入してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs-screenshots
+    attributes:
+      label: ログ・スクリーンショット
+      description: 関連するログ、スクリーンショット、補足ファイルがあれば貼り付けまたは添付してください。
+      placeholder: ログや画像があればここに貼り付けてください。
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+# Issue template chooser settings.
+# Blank issues are disabled for contributors; questions should go to Discussions.
+blank_issues_enabled: false
+
+contact_links:
+  - name: "💬 質問・使い方の相談"
+    url: ../discussions
+    about: 質問や使い方の相談は GitHub Discussions をご利用ください。
