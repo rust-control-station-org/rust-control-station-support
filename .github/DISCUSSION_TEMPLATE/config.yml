@@ -1,0 +1,7 @@
+# GitHub Discussions の Category Form は、カテゴリの slug と同名の
+# YAML ファイルによって自動的に表示されます。
+# このディレクトリでは q-a.yml、ideas.yml、showcase.yml が該当します。
+#
+# Q&A の回答機能は、このファイルではなく GitHub Web UI で設定します。
+# Discussions のカテゴリ作成時に「Q&A」形式を選択してください。
+{}

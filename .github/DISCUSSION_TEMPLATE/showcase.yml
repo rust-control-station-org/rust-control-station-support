@@ -1,0 +1,43 @@
+title: "利用事例: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rust Control Station の活用方法をぜひ共有してください。
+  - type: textarea
+    id: introduction
+    attributes:
+      label: 紹介内容
+      description: どのような目的で、どのように利用しているか記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット
+      description: 画像を貼り付けられます。個人情報や秘密情報が写っていないことを確認してください。
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 利用している環境
+      options:
+        - Cloud
+        - Self Hosted
+    validations:
+      required: true
+  - type: textarea
+    id: plugins
+    attributes:
+      label: 利用しているプラグイン
+      description: プラグインを利用していない場合は「なし」と記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: tips
+    attributes:
+      label: 工夫した点
+      description: 設定や運用で工夫した点、ほかの利用者に役立つヒントを記載してください。
+    validations:
+      required: true

@@ -1,0 +1,34 @@
+title: "機能要望: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご提案ありがとうございます。同じ提案がないか検索したうえで、以下をご記入ください。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 現在困っていること
+      description: 現在の状況や、解決したい課題を具体的に記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      description: どのような機能や改善を希望するか記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: 期待する効果
+      description: この提案によって、誰のどのような課題が解決するか記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 補足
+      description: 参考資料、代替案、スクリーンショットなどがあれば記載してください。
+    validations:
+      required: false

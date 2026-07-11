@@ -1,0 +1,47 @@
+title: "質問: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご質問ありがとうございます。同じ質問がないか検索したうえで、以下をご記入ください。
+        不具合と思われる場合は Discussions ではなく Issues をご利用ください。
+  - type: textarea
+    id: question
+    attributes:
+      label: 質問内容
+      description: 知りたいことや、期待している結果を具体的に記載してください。
+      placeholder: 例：○○を設定する方法を教えてください。
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 利用環境
+      description: Rust Control Station を利用している環境を選択してください。
+      options:
+        - Cloud
+        - Self Hosted
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: バージョン
+      description: 利用中の Rust Control Station のバージョンを記載してください。
+      placeholder: 例：1.2.3
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: 試したこと
+      description: 確認したドキュメント、設定、実行した操作などを記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット（任意）
+      description: 画像を貼り付けられます。個人情報や秘密情報が写っていないことを確認してください。
+    validations:
+      required: false
