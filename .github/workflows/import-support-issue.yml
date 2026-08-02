@@ -17,6 +17,10 @@ jobs:
   import:
     name: Import issue to private repository
     if: >-
+      contains(
+        fromJSON('["mazurk4", "safinfin", "NekosanQ", "coinvy"]'),
+        github.actor
+      ) &&
       github.event.label.name == 'accepted' &&
       !contains(github.event.issue.labels.*.name, 'imported')
     runs-on: ubuntu-latest
